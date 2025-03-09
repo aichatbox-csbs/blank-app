@@ -13,7 +13,6 @@ def load_data():
 
 df = load_data()
 
-# Crop Rotation Data
 crop_rotation_map = {
     'rice': ['lentil', 'chickpea', 'mustard'],
     'maize': ['soybean', 'blackgram', 'pea'],
