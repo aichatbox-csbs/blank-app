@@ -3,19 +3,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Custom CSS for hover effect
-st.markdown(
-    """
-    <style>
-        .hover-box:hover {
-            background-color: #f0f0f0;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Crop Rotation Data
 crop_rotation_map = {
