@@ -1,4 +1,8 @@
 streamlit
-joblib
-os
-PIL
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+xgboost
+tensorflow
