@@ -6,11 +6,6 @@ import matplotlib.pyplot as plt
 import pickle
 from sklearn.preprocessing import StandardScaler
 
-# Load the trained models and encoders (Assuming these are saved already)
-# with open('model.pkl', 'rb') as f:
-#     model = pickle.load(f)
-
-# Load dataset
 @st.cache_data
 def load_data():
     df = pd.read_csv('Crop_recommendation.csv')
