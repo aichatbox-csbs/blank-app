@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Crop Rotation Data
 crop_rotation_map = {
