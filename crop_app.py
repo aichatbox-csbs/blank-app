@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Crop_recommendation.csv')
+    df = pd.read_csv('crop_recommendation.csv')
     return df
 
 df = load_data()
