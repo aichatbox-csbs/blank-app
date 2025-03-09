@@ -6,7 +6,7 @@ import os
 from PIL import Image
 
 # Load the trained model
-model = joblib.load("crop_prediction_model.pkl")  # Ensure the model is available
+model = joblib.load("crop_recommendation.csv")  # Ensure the model is available
 
 # Crop Images Directory (Assume images are stored with crop names as filenames)
 IMAGE_DIR = "crop_images/"
