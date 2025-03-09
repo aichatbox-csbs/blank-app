@@ -4,7 +4,6 @@ import numpy as np
 # Load the trained model
 model = joblib.load("crop_recommendation.csv")  # Ensure the model is availabl
 
-# Crop cultivation steps
 crop_steps = {
     "Rice": "1. Prepare land with good water retention.\n2. Use quality seeds.\n3. Irrigate frequently.\n4. Apply fertilizers and pest control.",
     "Wheat": "1. Plow land properly.\n2. Sow seeds in cool temperatures.\n3. Use nitrogen-rich fertilizers.\n4. Harvest when golden brown."
