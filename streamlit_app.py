@@ -1,28 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
-import os
-from PIL import Image
-
 # Load the trained model
-model = joblib.load("crop_recommendation.csv")  # Ensure the model is available
-
-# Crop Images Directory (Assume images are stored with crop names as filenames)
-IMAGE_DIR = "crop_images/"
+model = joblib.load("crop_recommendation.csv")  # Ensure the model is availabl
 
 # Crop cultivation steps
 crop_steps = {
     "Rice": "1. Prepare land with good water retention.\n2. Use quality seeds.\n3. Irrigate frequently.\n4. Apply fertilizers and pest control.",
     "Wheat": "1. Plow land properly.\n2. Sow seeds in cool temperatures.\n3. Use nitrogen-rich fertilizers.\n4. Harvest when golden brown."
 }
-
-# Function to get crop image
-def get_crop_image(crop_name):
-    img_path = os.path.join(IMAGE_DIR, f"{crop_name.lower()}.jpg")
-    if os.path.exists(img_path):
-        return Image.open(img_path)
-    return None
 
 # UI Layout
 st.title("Smart Crop Advisor for Farmers")
