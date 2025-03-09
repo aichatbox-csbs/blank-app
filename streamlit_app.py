@@ -78,6 +78,5 @@ fig, ax = plt.subplots()
 sns.heatmap(mock_data.corr(), annot=True, cmap="coolwarm", ax=ax)
 st.pyplot(fig)
 
-# Hover Effect on Rotation Info
-st.markdown('<div class="hover-box"><b>Hover over this box for effect!</b></div>', unsafe_allow_html=True)
+
 
